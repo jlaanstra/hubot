@@ -105,8 +105,6 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-call "!NODE_EXE!" "%~dp0\node_modules\coffee-script\bin\coffee" "%~dp0\node_modules\hubot\bin\hubot" -a slack -n Hubot
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: Post deployment stub
