@@ -105,6 +105,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+SET PATH=%PATH%;%DEPLOYMENT_TARGET%\node_modules\coffee-script\bin
 call bin/hubot -a slack -n Hubot
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
