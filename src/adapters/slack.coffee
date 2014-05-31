@@ -1,4 +1,7 @@
-{Robot, Adapter, TextMessage} = require 'hubot'
+Robot         = require '../robot'
+Adapter       = require '../adapter'
+{TextMessage} = require '../message'
+
 https = require 'https'
 
 class Slack extends Adapter
