@@ -107,7 +107,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 
 IF EXIST "%DEPLOYMENT_TARGET%\node_modules\coffee-script\bin" (
   echo "Coffee exists!"
-  SET PATH=%PATH%;%DEPLOYMENT_TARGET%\node_modules\coffee-script\bin
+  SET PATH=%PATH%;"%DEPLOYMENT_TARGET%\node_modules\coffee-script\bin"
 )
 call bin/hubot -a slack -n Hubot
 
