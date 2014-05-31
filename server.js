@@ -12,4 +12,4 @@ var adapterPath = path.join(__dirname, "src", "adapters");
 var adapter = "slack";
 
 // Start the hubot
-hubot.loadBot(adapterPath, )
+hubot.loadBot(adapterPath, adapter, true);
