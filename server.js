@@ -1,2 +1,2 @@
 require('coffee-script/register');
-require('hubot/bin/hubot');
+require('hubot/bin/hubot.coffee');
