@@ -105,6 +105,10 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
+IF EXIST  "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot" (
+  copy "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot" "%DEPLOYMENT_TARGET%\node_modules\hubot\bin\hubot.coffee"
+)
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: Post deployment stub
